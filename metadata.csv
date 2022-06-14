@@ -1,0 +1,56 @@
+Declare,metatab-latest
+Title,Indirect Cost Rates
+Description,Lists of department-approved rates for local educational agencies
+Identifier,d24c553a-806a-4c20-9b47-f0af6ced4239
+Name,cde.ca.gov-indirect_costs-1.1.1
+Dataset,indirect_costs
+Origin,cde.ca.gov
+Time,
+Space,
+Grain,
+Variant,
+Version,1.1.1
+Version.Major,1
+Version.Minor,1
+Version.Patch,1
+Created,2022-06-13T21:15:27
+Modified,2022-06-13T23:05:34
+Giturl,https://github.com/metatab-packages/cde.ca.gov-collection.git
+""
+Section,Contacts,Email,Organization,Url
+Wrangler,Eric Busboom,eric@civicknowledge.com,Civic Knowledge,http://civicknowledge.com
+""
+Section,Documentation,Title,Description,
+Documentation,file:README.md,README,,
+Downloadpage,https://www.cde.ca.gov/fg/ac/ic/,Indirect Cost Rates (ICR),ICR data download page,
+""
+Section,References,Name,Description,
+Reference,https://www.cde.ca.gov/fg/ac/ic/documents/icr1819to2223.xlsx#start=11&headers=10,icr1819to2223,ICR For disctrict schools,
+Reference,https://www.cde.ca.gov/fg/ac/ic/documents/icrcharter2223.xlsx#start=6&headers=5,icrcharter2223,"ICR for Charter Schools, 2022",
+Reference,https://www.cde.ca.gov/fg/ac/ic/documents/icrcharter2122.xlsx#start=6&headers=5,icrcharter2122,"ICR for Charter Schools, 2021",
+Reference,https://www.cde.ca.gov/fg/ac/ic/documents/icrcharter2021.xlsx#start=6&headers=5,icrcharter2021,"ICR for Charter Schools, 2020",
+Reference,https://www.cde.ca.gov/fg/ac/ic/documents/icrcharter1920.xlsx#start=6&headers=5,icrcharter1920,"ICR for Charter Schools, 2019",
+Reference,https://www.cde.ca.gov/fg/ac/ic/documents/icrcharter1819.xlsx#start=6&headers=5,icrcharter1819,"ICR for Charter Schools, 2018",
+""
+Section,Resources,Name,Description,
+Datafile,notebooks/extract.ipynb#chtr,charter_icr,ICR for Charter schools,
+Datafile,notebooks/extract.ipynb#districts,dist_icr,ICR for District schools,
+""
+Section,Schema,DataType,AltName,Description,Has_Codes
+Table,charter_icr,,,,
+Table.Column,County Code,integer,county_code,,
+Table.Column,District Code,integer,district_code,,
+Table.Column,School Code,integer,school_code,,
+Table.Column,Charter Number,integer,charter_number,,T
+Table.Column,Name,text,name,,
+Table.Column,Approved Rates,number,approved_rates,,
+Table,dist_icr,,,,
+Table.Column,County Code,integer,county_code,,
+Table.Column,LEA Code,integer,lea_code,,
+Table.Column,Type,string,type,,
+Table.Column,LEA Name,string,lea_name,,
+Table.Column,rate1819,number,,,
+Table.Column,rate1920,number,,,
+Table.Column,rate2021,number,,,
+Table.Column,rate2122,number,,,
+Table.Column,rate2223,number,,,
