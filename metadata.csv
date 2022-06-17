@@ -14,16 +14,16 @@ Version.Major,1
 Version.Minor,1
 Version.Patch,1
 Created,2022-06-13T21:15:27
-Modified,2022-06-14T16:18:20
+Modified,2022-06-17T17:11:28
 Giturl,https://github.com/metatab-packages/cde.ca.gov-indirect_costs.git
-
+""
 Section,Contacts,Email,Organization,Url
 Wrangler,Eric Busboom,eric@civicknowledge.com,Civic Knowledge,http://civicknowledge.com
-
+""
 Section,Documentation,Title,Description,
 Documentation,file:README.md,README,,
 Downloadpage,https://www.cde.ca.gov/fg/ac/ic/,Indirect Cost Rates (ICR),ICR data download page,
-
+""
 Section,References,Name,Description,
 Reference,https://www.cde.ca.gov/fg/ac/ic/documents/icr1819to2223.xlsx#start=11&headers=10,icr1819to2223,ICR For disctrict schools,
 Reference,https://www.cde.ca.gov/fg/ac/ic/documents/icrcharter2223.xlsx#start=6&headers=5,icrcharter2223,"ICR for Charter Schools, 2022",
@@ -31,11 +31,11 @@ Reference,https://www.cde.ca.gov/fg/ac/ic/documents/icrcharter2122.xlsx#start=6&
 Reference,https://www.cde.ca.gov/fg/ac/ic/documents/icrcharter2021.xlsx#start=6&headers=5,icrcharter2021,"ICR for Charter Schools, 2020",
 Reference,https://www.cde.ca.gov/fg/ac/ic/documents/icrcharter1920.xlsx#start=6&headers=5,icrcharter1920,"ICR for Charter Schools, 2019",
 Reference,https://www.cde.ca.gov/fg/ac/ic/documents/icrcharter1819.xlsx#start=6&headers=5,icrcharter1819,"ICR for Charter Schools, 2018",
-
+""
 Section,Resources,Name,Description,
 Datafile,notebooks/extract.ipynb#chtr,charter_icr,ICR for Charter schools,
 Datafile,notebooks/extract.ipynb#districts,dist_icr,ICR for District schools,
-
+""
 Section,Schema,DataType,AltName,Description,Has_Codes
 Table,charter_icr,,,,
 Table.Column,County Code,integer,county_code,,
